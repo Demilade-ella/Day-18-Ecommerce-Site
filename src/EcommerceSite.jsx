@@ -236,7 +236,9 @@ function EcommerceSite() {
         return matchesTab && matchesSearch;
     }) : [];
 
-    const toggleWishList = (PRODUCTSId) => { setWishlist(prev => prev.includes(PRODUCTSId) ? prev. filter(id => id !== PRODUCTSId) : [...prev, PRODUCTSId]);
+    const toggleWishList = (PRODUCTSId) => {
+        setWishlist(prev => prev.includes(PRODUCTSId) ? prev.filter(id => id !== PRODUCTSId) : [...prev, PRODUCTSId]
+        );
     };
 
     const addToCart = (PRODUCTS) => {
